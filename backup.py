@@ -45,3 +45,4 @@ for conf in config.backupList:
             shutil.copy(srcPath, destName)
 
 shutil.make_archive(backupFilePath, "gztar", tmpPath)
+shutil.rmtree(tmpPath)
